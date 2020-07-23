@@ -1,0 +1,165 @@
+//section visual
+.visual{
+  background: $dark;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+
+  .particle1{
+    position: absolute;
+    top: -23px;
+    left: -90px;
+    z-index: -1;
+
+  }
+  .particle2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    margin: auto;
+  }
+
+  .container{
+    position: relative;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+  }
+  .text{
+    flex: 1;
+    position: relative;
+    z-index: 1;
+
+    h1{
+      font-size: 48px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 35px;
+      line-height: 1.3;
+
+    }
+    p{
+      font-size: 18px;
+      font-weight: 300;
+      color: #cccccc;
+      line-height: 1.8;
+      margin-bottom: 14px;
+
+    }
+    .more {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 2.06;
+      margin-bottom: 60px;
+      color: #ffffff;
+      display: block;
+
+    }
+    .btn-download {
+      width: 246px;
+      height: 60px;
+      border-radius: 6px;
+      background: $topaz;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: $dark;
+      img{
+        margin-right: 8px;
+      }
+
+    }
+    .caution{
+      font-size: 14px;
+      font-weight: 300;
+      color: #777777;
+      margin-bottom: 40px;
+    }
+    .platform{
+      h2{
+        font-size: 16px;
+        font-weight: 300;
+        color: #ffffff;
+        margin-bottom: 30px;
+      }
+      .links{
+        a{
+          margin-right: 36px;
+        }
+      }
+    }
+
+
+  }
+  .media{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 30;
+
+
+  }
+  nav{
+    display: flex;
+    justify-content: center;
+    background: $gray;
+    .nav-item{
+      position: relative;
+      z-index: 1;
+      opacity: 0.4;
+      &.is-active{
+        opacity: 1;
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: -1;
+          background: $dark;
+          transform: skew(-15deg);
+
+
+
+        }
+      }
+
+      .nav-link{
+        width: 280px;
+        height: 80px;
+        display: flex;
+        color: #ffffff;
+        align-items: center;
+        justify-content: center;
+        &.no1::before{
+          background:$topaz;
+        }
+        &.no2::before{
+          background:$lime;
+        }
+        &.no3::before{
+          background:$mustard;
+        }
+        &:before{
+          content: '';
+          width: 22px;
+          height: 22px;
+          margin-right: 10px;
+          display: flex;
+
+        }
+
+      }
+    }
+
+
+  }
+}

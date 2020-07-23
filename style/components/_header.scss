@@ -1,5 +1,11 @@
 .header {
   background: $dark;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
   .container {
     height: 80px;
     display: flex;
@@ -12,12 +18,18 @@
       color: #ffffff;
 
   }
-  .gnb{
+  .gnb {
     display: flex;
-    nav{
+  }
+  nav{
       display: flex;
       .nav-item{
         padding: 0 25px;
+        &:hover{
+          .nav-link{
+
+          }
+        }
         .dropdown{
           display: none;
         }
@@ -54,22 +66,28 @@
       }
 
     }
-    .btn-login{
-      width: 90px;
-      height: 40px;
-      border-radius: 6px;
-      background: $lime;
+    .member-area{
+      width: 185px;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      font-weight: bold;
+      justify-content: flex-end;
+
+      .btn-login{
+        width: 90px;
+        height: 40px;
+        border-radius: 6px;
+        background: $lime;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: bold;
+
+      }
 
 
     }
 
   }
-  nav{
 
-  }
-}
+
+
