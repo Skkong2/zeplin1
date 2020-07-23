@@ -452,8 +452,55 @@ html, body {
   height: 100%; }
 
 .container {
-  max-width: 1230px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px; }
+
+.header {
+  background: #151a1d; }
+  .header .container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .header .logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #ffffff; }
+  .header .gnb {
+    display: flex; }
+    .header .gnb nav {
+      display: flex; }
+      .header .gnb nav .nav-item {
+        padding: 0 25px; }
+        .header .gnb nav .nav-item .dropdown {
+          display: none; }
+        .header .gnb nav .nav-item .nav-link {
+          font-size: 14px;
+          color: #ffffff;
+          display: flex;
+          height: 40px;
+          align-items: center;
+          opacity: 0.6; }
+          .header .gnb nav .nav-item .nav-link:hover .open {
+            display: none; }
+          .header .gnb nav .nav-item .nav-link:hover .close {
+            display: block; }
+          .header .gnb nav .nav-item .nav-link.is-active {
+            opacity: 1; }
+          .header .gnb nav .nav-item .nav-link img {
+            margin-left: 10px; }
+            .header .gnb nav .nav-item .nav-link img.close {
+              display: none; }
+    .header .gnb .btn-login {
+      width: 90px;
+      height: 40px;
+      border-radius: 6px;
+      background: #cdee0a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
